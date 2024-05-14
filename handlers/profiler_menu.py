@@ -2,9 +2,6 @@ from services import get_profile as profile, get_blacklisted as blacklist
 from helper import clear, colors, messages, translate
 
 class ProfilerMenu:
-    def __init__(self):
-        pass
-
     def menus():
         try:
             is_running = True

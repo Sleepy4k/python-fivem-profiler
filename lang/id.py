@@ -1,6 +1,8 @@
 ID = {
     "welcome": "Selamat datang di fivem profiler!",
+
     "app_name": "Fivem Profiler",
+
     "menu_title": "Profiler Menu",
     "menu_get_profile": "Dapatkan Profil Server",
     "menu_get_blacklisted": "Dapatkan Data Blacklisted",

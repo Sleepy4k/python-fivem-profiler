@@ -1,5 +1,5 @@
 from time import sleep
-from helper import messages, translate
+from helper import translate
 from handlers.profiler_menu import ProfilerMenu
 
 class Main:
@@ -11,7 +11,6 @@ class Main:
         print(f"{translate.Translate().t("loading")}...")
         sleep(2)
         ProfilerMenu.menus()
-
 
 if __name__ == '__main__': Main()
 else: print("This is a module, not a standalone script.")

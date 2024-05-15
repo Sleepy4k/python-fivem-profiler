@@ -27,10 +27,20 @@ class ProfilerMenu:
                         input(f'{colors.white}{translate.Translate().t("press_enter")}...')
                         continue
 
-                    server_ip = server_ip.replace("http://", "").replace("https://", "").split("/")
-                    server_ip = server_ip[len(server_ip) - 1]
+                    GetProfile = None
 
-                    profile.GetProfile(server_ip).get()
+                    if "http://" in server_ip or "https://" in server_ip or "/" in server_ip:
+                        server_ip = server_ip.replace("http://", "").replace("https://", "").split("/")
+                        server_ip = server_ip[len(server_ip) - 1]
+                        GetProfile = profile.GetProfile(server_ip, "id")
+
+                    if ":" in server_ip:
+                        GetProfile = profile.GetProfile(server_ip, "ip")
+
+                    if GetProfile is None:
+                        GetProfile = profile.GetProfile(server_ip, "id")
+
+                    GetProfile.get()
                 elif choice == '2':
                     clear.clear_with_banner()
                     blacklist.GetBlacklisted().get()

@@ -1,5 +1,6 @@
 EN = {
-    "welcome": "Welcome to the fivem profiler!",
+    "welcome": "Welcome to the %1! built with %2 developed by %3",
+    "loading": "Loading",
 
     "app_name": "Fivem Profiler",
 

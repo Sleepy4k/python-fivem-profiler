@@ -1,5 +1,6 @@
 ID = {
-    "welcome": "Selamat datang di fivem profiler!",
+    "welcome": "Selamat datang di %1! dibangun dengan %2 dikembangkan oleh %3",
+    "loading": "Memuat",
 
     "app_name": "Fivem Profiler",
 
